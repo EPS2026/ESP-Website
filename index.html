@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empowered Pathway Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h2 {
+    color: #0f4c81;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #0f4c81;
+}
+
+/* Hero with animated gradient */
+.hero {
+    background: linear-gradient(135deg, #f97316, #22c55e, #0ea5e9);
+    background-size: 200% 200%;
+    animation: gradientShift 12s ease infinite;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #f97316;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ea580c;
+}
+
+/* Sections */
+section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #0f4c81;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #0f4c81;
+    margin-bottom: 15px;
+}
+
+/* About */
+.about {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+/* Contact */
+.contact-box {
+    background: #0f4c81;
+    color: white;
+    padding: 50px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.contact-box a {
+    display: inline-block;
+    margin-top: 20px;
+    background: white;
+    color: #0f4c81;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    color: white;
+    margin-top: 50px;
+}
+
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div style="display:flex; align-items:center; gap:15px;">
+        <img src="logo.png" alt="Empowered Pathway Services Logo" style="height:55px;">
+        <h2 style="margin:0;">Empowered Pathway Services</h2>
+    </div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Empowering Independence. Supporting Growth.</h1>
+    <p>
+        Empowering individuals on a pathway to independence, confidence, and a fulfilling life.
+    </p>
+    <a href="#contact" class="btn">Request Information</a>
+</section>
+
+<section id="about">
+    <div class="section-title">
+        <h2>About Us</h2>
+    </div>
+    <div class="about">
+        <p>
+            At Empowered Pathway Services, our mission is to provide compassionate, personalized
+support to individuals with developmental disabilities, empowering them to achieve
+independence, build confidence, and live fulfilling lives. We are committed to fostering a
+safe, inclusive, and encouraging environment where every person can discover their
+pathway to growth, self-suﬃciency, and meaningful community engagement.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-title">
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Independent Living Skills</h3>
+            <p>Support with cooking, budgeting, hygiene, and daily routines.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community Integration</h3>
+            <p>Assistance with employment goals, education, and community engagement.</p>
+        </div>
+
+        <div class="card">
+            <h3>Behavioral Support</h3>
+            <p>Structured guidance and consistent person-centered support.</p>
+        </div>
+
+        <div class="card">
+            <h3>24/7 On-Call Support</h3>
+            <p>Reliable response and assistance when it matters most.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact-box">
+        <p><strong>Phone:</strong> (909) 255-9255</p>
+        <p><strong>Email:</strong> admin@empoweredps.org</p>
+        <p><strong>Service Area:</strong> San Bernardino County & Los Angeles County</p>
+
+        <a href="admin@empoweredps.org>Send Email</a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Empowered Pathway Services. All Rights Reserved.
+</footer>
+
+</body>
+</html>
